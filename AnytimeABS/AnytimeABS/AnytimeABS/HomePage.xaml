@@ -4,7 +4,7 @@
              x:Class="AnytimeABS.HomePage">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-            <Label Text="Welcome to Anytime ABS!" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label Text="Welcome to Anytime ABS!" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large"/>
             <Button Text="Instructions" Clicked="Button_Clicked" />
             <Picker x:Name="TimePicker" Title="Select an ammount of time" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" SelectedIndexChanged="TimePicker_SelectedIndexChanged" />
             <Button Text="Start Timer!" Clicked="Button_Clicked_StartTimer" VerticalOptions="End"/>
