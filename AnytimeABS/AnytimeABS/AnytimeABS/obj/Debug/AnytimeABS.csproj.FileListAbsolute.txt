@@ -1,0 +1,15 @@
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\bin\Debug\AnytimeABS.dll
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\bin\Debug\AnytimeABS.pdb
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.csprojResolveAssemblyReference.cache
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.MainPage.xaml.g.cs
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.App.xaml.g.cs
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.dll
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.pdb
