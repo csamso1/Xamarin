@@ -13,3 +13,5 @@ C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\D
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.App.xaml.g.cs
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.dll
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.pdb
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.HomePage.xaml.g.cs
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.Instructions.xaml.g.cs

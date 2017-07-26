@@ -12,8 +12,7 @@ namespace AnytimeABS
         public App()
         {
             InitializeComponent();
-
-            MainPage = new AnytimeABS.MainPage();
+            MainPage = new NavigationPage(new HomePage());
         }
 
         protected override void OnStart()
