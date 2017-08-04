@@ -39,7 +39,7 @@ namespace AnytimeABS
 
         private void Button_Clicked_StartTimer(object sender, EventArgs e)
         {
-            //ToDo start timer with specified value from TimePicker
+            Navigation.PushAsync(new Timer());
         }
     }
 }
