@@ -17,9 +17,14 @@ namespace AnytimeABS
 			InitializeComponent ();
 		}
 
-        private void Timer_Button_Clicked(object sender, EventArgs e)
+        private void Stop_Timer_Button_Clicked(object sender, EventArgs e)
         {
-            //ToDo
+            //ToDo: Kill the timer & notification process
+        }
+
+        public async Task start_timer()
+        {
+            await Navigation.PushAsync(new Testing_Timer_Action());
         }
     }
 }

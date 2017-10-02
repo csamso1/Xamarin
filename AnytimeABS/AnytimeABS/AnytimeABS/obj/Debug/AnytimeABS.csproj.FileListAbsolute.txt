@@ -16,3 +16,5 @@ C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\D
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.HomePage.xaml.g.cs
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.Instructions.xaml.g.cs
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.Timer.xaml.g.cs
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.csproj.CoreCompileInputs.cache
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.Testing_Timer_Action.xaml.g.cs

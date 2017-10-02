@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,7 +33,7 @@ namespace AnytimeABS
             Navigation.PushAsync(new Instructions());
         }
 
-        private void TimePicker_SelectedIndexChanged(object sender, EventArgs e)
+        public void TimePicker_SelectedIndexChanged(object sender, EventArgs e)
         {
             var amtOfTime = TimePicker.Items[TimePicker.SelectedIndex] + 1;
         }
@@ -40,6 +41,14 @@ namespace AnytimeABS
         private void Button_Clicked_StartTimer(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Timer());
+
+            var minutes = TimeSpan.FromMinutes(3);
+            Device.StartTimer(minutes, () =>
+           {
+                //Returning True means repeat this timer
+                return true;
+           });
+
         }
     }
 }

@@ -25,11 +25,11 @@ C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Andro
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\System.Resources.ResourceManager.dll
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\System.Diagnostics.Tools.dll
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\System.ComponentModel.dll
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\System.Reflection.dll
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\System.Collections.dll
-C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\System.ObjectModel.dll
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\System.Globalization.dll
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\System.Linq.Expressions.dll

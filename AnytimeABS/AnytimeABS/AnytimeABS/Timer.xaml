@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AnytimeABS.Timer">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
-            <Label Text="This is the Timer Page!" />
-            <Button Text="Start Timer!" Clicked="Timer_Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+            <Label Text="Remeber to keep your abs tight when you hear the tone!" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+            <Button Text="Stop Timer" Clicked="Stop_Timer_Button_Clicked" HorizontalOptions="Center" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
