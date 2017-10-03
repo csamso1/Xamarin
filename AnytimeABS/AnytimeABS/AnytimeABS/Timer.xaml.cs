@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using AnytimeABS.Messages;
@@ -30,15 +29,7 @@ namespace AnytimeABS
                 MessagingCenter.Send(message, "StopTimerTaskMessage");
             };
 
-
-
-
-            var minutes = TimeSpan.FromMinutes(1)
-            /*Device.StartTimer(minutes, async () =>
-           {
-               Start_Timer();
-               return false;
-           });*/
+            HandleReceivedMessages();
 		}
 
         private void Stop_Timer_Button_Clicked(object sender, EventArgs e)
@@ -47,9 +38,28 @@ namespace AnytimeABS
             Navigation.PopAsync();
         }
 
-        public Task await Start_Timer()
+        /*public Task await Start_Timer()
         {
             System.Diagnostics.Debug.WriteLine("task start_timer called!");
+        }*/
+
+        void HandleReceivedMessages()
+        {
+            MessagingCenter.Subscribe<TickedMessage>(this, "TickedMessage", message =>
+           {
+               Device.BeginInvokeOnMainThread(() =>
+               {
+                   ticker.Text = message.Message;
+               });
+           });
+
+            MessagingCenter.Subscribe<CancelledMessage>(this, "CancelledMessage", message =>
+           {
+               Device.BeginInvokeOnMainThread(() =>
+               {
+                   ticker.Text = "Cancelled";
+               });
+           });
         }
     }
 }

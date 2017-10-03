@@ -7,7 +7,7 @@
             <Label Text="Welcome to Anytime ABS!" VerticalOptions="Start"  HorizontalOptions="Center" FontSize="Large"/>
             <Button Text="Instructions" Clicked="Button_Clicked" />
             <Picker x:Name="TimePicker" Title="Select an amount of time" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" SelectedIndexChanged="TimePicker_SelectedIndexChanged" />
-            <Button Text="Start Timer!" Clicked="Button_Clicked_StartTimer" VerticalOptions="End"/>
+            <Button Text="Get Started!" Clicked="Button_Clicked_StartTimer" VerticalOptions="End"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

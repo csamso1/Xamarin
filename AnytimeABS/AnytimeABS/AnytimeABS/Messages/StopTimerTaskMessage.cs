@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnytimeABS.Messages
 {
-    class StopTimerTaskMessage
+    public class StopTimerTaskMessage
     {
     }
 }

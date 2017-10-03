@@ -9,16 +9,16 @@ using Xamarin.Forms;
 
 namespace AnytimeABS
 {
-    class TaskTimer
+    public class TaskTimer
     {
-        public async Task StartTimer(CancellationToken token)
+        public async Task RunTimer(CancellationToken token)
         {
             await Task.Run(async () =>
            {
                for (long i = 0; i < long.MaxValue; i++)
                {
                    token.ThrowIfCancellationRequested();
-                   await Task.Delay(500);
+                   await Task.Delay(1000);
                    var message = new TickedMessage
                    {
                        Message = i.ToString()

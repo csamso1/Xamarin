@@ -2,6 +2,10 @@ AnytimeABS.Droid.MainActivity, AnytimeABS.Android;md5166db17287a4999d546755647a8
 AnytimeABS.Droid.MainActivity, AnytimeABS.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5166db17287a4999d546755647a8c1267.MainActivity
 AnytimeABS.Droid.MainActivity;md5166db17287a4999d546755647a8c1267.MainActivity
 anytimeabs.droid.MainActivity;md5166db17287a4999d546755647a8c1267.MainActivity
+AnytimeABS.Droid.Services.StartTimerTaskService, AnytimeABS.Android;md54ffab8ab1d1cc7f10f6e90be9ecb9d58.StartTimerTaskService
+AnytimeABS.Droid.Services.StartTimerTaskService, AnytimeABS.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54ffab8ab1d1cc7f10f6e90be9ecb9d58.StartTimerTaskService
+AnytimeABS.Droid.Services.StartTimerTaskService;md54ffab8ab1d1cc7f10f6e90be9ecb9d58.StartTimerTaskService
+anytimeabs.droid.services.StartTimerTaskService;md54ffab8ab1d1cc7f10f6e90be9ecb9d58.StartTimerTaskService
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor

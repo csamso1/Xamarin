@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnytimeABS.Messages
 {
-    class TickedMessage
+    public class TickedMessage
     {
         public string Message { get; set; }
     }
