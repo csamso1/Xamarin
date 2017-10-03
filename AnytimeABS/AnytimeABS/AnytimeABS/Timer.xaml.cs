@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using AnytimeABS.Messages;
 
 namespace AnytimeABS
 {
@@ -15,16 +16,40 @@ namespace AnytimeABS
 		public Timer ()
 		{
 			InitializeComponent ();
+
+            //Wiring up XAML buttons
+            StartTimer.Clicked += (s, e) =>
+            {
+                var message = new StartTimerTaskMessage();
+                MessagingCenter.Send(message, "StartTimerTaskMessage");
+            };
+
+            StopTimer.Clicked += (s, e) =>
+            {
+                var message = new StopTimerTaskMessage();
+                MessagingCenter.Send(message, "StopTimerTaskMessage");
+            };
+
+
+
+
+            var minutes = TimeSpan.FromMinutes(1)
+            /*Device.StartTimer(minutes, async () =>
+           {
+               Start_Timer();
+               return false;
+           });*/
 		}
 
         private void Stop_Timer_Button_Clicked(object sender, EventArgs e)
         {
             //ToDo: Kill the timer & notification process
+            Navigation.PopAsync();
         }
 
-        public async Task start_timer()
+        public Task await Start_Timer()
         {
-            await Navigation.PushAsync(new Testing_Timer_Action());
+            System.Diagnostics.Debug.WriteLine("task start_timer called!");
         }
     }
 }

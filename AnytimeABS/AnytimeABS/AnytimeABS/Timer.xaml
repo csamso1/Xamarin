@@ -5,7 +5,8 @@
     <ContentPage.Content>
         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
             <Label Text="Remeber to keep your abs tight when you hear the tone!" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
-            <Button Text="Stop Timer" Clicked="Stop_Timer_Button_Clicked" HorizontalOptions="Center" />
+            <Button Text="Start Timer" Clicked="Start_Timer_Button_Clicked" HorizontalOptions="Center" x:Name="StartTimer"/>
+            <Button Text="Stop Timer" Clicked="Stop_Timer_Button_Clicked" HorizontalOptions="Center" x:Name="StopTimer"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

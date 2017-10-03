@@ -6,6 +6,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using AnytimeABS.Messages;
+using Xamarin.Forms;
 
 namespace AnytimeABS.Droid
 {
@@ -21,6 +23,14 @@ namespace AnytimeABS.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
+        }
+
+        void WireUpStartTimerTask()
+        {
+            MessagingCenter.Subscribe<StartTimerTaskMessage> (this, "StartTimerTaskMessage", message =>
+            {
+                var intent = new Intent(this, typeof(LongRunningTaskService))
+            })
         }
     }
 }
