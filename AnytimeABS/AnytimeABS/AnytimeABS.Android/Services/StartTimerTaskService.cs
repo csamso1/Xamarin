@@ -34,7 +34,9 @@ namespace AnytimeABS.Droid.Services
                try
                {
                    //Invoke the shared code
-                   var timer = new TaskTimer();
+                   
+                   var timer = new TaskTimer(1);
+                   //need to pass time in minutes instead of 1 in line below, testing 1 minute
                    timer.RunTimer(_cts.Token).Wait();
                }
                catch (System.OperationCanceledException) { }

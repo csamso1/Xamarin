@@ -35,20 +35,12 @@ namespace AnytimeABS
 
         public void TimePicker_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var amtOfTime = TimePicker.Items[TimePicker.SelectedIndex] + 1;
+            var TimePicker_Index = TimePicker.Items[TimePicker.SelectedIndex] + 1;
         }
 
         private void Button_Clicked_StartTimer(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Timer());
-
-            var minutes = TimeSpan.FromMinutes(3);
-            Device.StartTimer(minutes, () =>
-           {
-                //Returning True means repeat this timer
-                return true;
-           });
-
+            Navigation.PushAsync(new Timer(TimePicker.SelectedIndex));
         }
     }
 }

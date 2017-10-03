@@ -11,11 +11,24 @@ namespace AnytimeABS
 {
     public class TaskTimer
     {
+        public int time_interval;
+
+        public TaskTimer(int minutes)
+        {
+            time_interval = minutes;
+        }
+
+        public int get_time_interval()
+        {
+            return time_interval;
+        }
+
         public async Task RunTimer(CancellationToken token)
         {
             await Task.Run(async () =>
            {
-               for (long i = 0; i < long.MaxValue; i++)
+               long time_in_minutes = time_interval * 60 * 1000;
+               for (long i = 0; i < time_in_minutes; i++)
                {
                    token.ThrowIfCancellationRequested();
                    await Task.Delay(1000);
@@ -29,6 +42,8 @@ namespace AnytimeABS
                        MessagingCenter.Send<TickedMessage>(message, "TickedMessage");
                    });
                }
+               System.Diagnostics.Debug.WriteLine("for loop in TaskTimer.cs has completed.");
+               System.Diagnostics.Debug.WriteLine("time_in_minutes = " + time_in_minutes);
            }, token);
         }
     }

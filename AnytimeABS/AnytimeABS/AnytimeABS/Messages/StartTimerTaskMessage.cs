@@ -8,5 +8,16 @@ namespace AnytimeABS.Messages
 {
     public class StartTimerTaskMessage
     {
+        public int num_minutes;
+
+        public StartTimerTaskMessage(int minutes)
+        {
+            num_minutes = minutes;
+        }
+
+        public int getTimerInterval()
+        {
+            return num_minutes;
+        }
     }
 }
