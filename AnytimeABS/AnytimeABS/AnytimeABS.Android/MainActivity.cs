@@ -39,7 +39,7 @@ namespace AnytimeABS.Droid
             MessagingCenter.Subscribe<StopTimerTaskMessage>(this, "StopTimerTaskMessage", message =>
             {
                 var intent = new Intent(this, typeof(StartTimerTaskService));
-                StartService(intent);
+                StopService(intent);
             });
         }
     }

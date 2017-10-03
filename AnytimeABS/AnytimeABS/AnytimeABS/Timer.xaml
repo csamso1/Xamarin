@@ -6,7 +6,7 @@
         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
             <Label Text="Remeber to keep your abs tight when you hear the tone!" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
             <Button Text="Start Timer" HorizontalOptions="Center" x:Name="StartTimer"/>
-            <Button Text="Stop Timer" Clicked="Stop_Timer_Button_Clicked" HorizontalOptions="Center" x:Name="StopTimer"/>
+            <Button Text="Stop Timer" HorizontalOptions="Center" x:Name="StopTimer"/>
             <Label Text="" x:Name="ticker" FontSize="Large" HorizontalOptions="Center"/>
         </StackLayout>
     </ContentPage.Content>

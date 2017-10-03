@@ -32,17 +32,6 @@ namespace AnytimeABS
             HandleReceivedMessages();
 		}
 
-        private void Stop_Timer_Button_Clicked(object sender, EventArgs e)
-        {
-            //ToDo: Kill the timer & notification process
-            Navigation.PopAsync();
-        }
-
-        /*public Task await Start_Timer()
-        {
-            System.Diagnostics.Debug.WriteLine("task start_timer called!");
-        }*/
-
         void HandleReceivedMessages()
         {
             MessagingCenter.Subscribe<TickedMessage>(this, "TickedMessage", message =>
@@ -57,7 +46,7 @@ namespace AnytimeABS
            {
                Device.BeginInvokeOnMainThread(() =>
                {
-                   ticker.Text = "Cancelled";
+                   ticker.Text = "Timer Stopped";
                });
            });
         }
