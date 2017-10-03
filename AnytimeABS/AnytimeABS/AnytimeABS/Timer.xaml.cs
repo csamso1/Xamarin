@@ -7,6 +7,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using AnytimeABS.Messages;
 using System.Threading;
+using AnytimeABS.Dependency;
+using AnytimeABS.Services;
 
 namespace AnytimeABS
 {
@@ -49,6 +51,9 @@ namespace AnytimeABS
                 var message = new StopTimerTaskMessage();
                 MessagingCenter.Send(message, "StopTimerTaskMessage");
                 //ToDo play tone
+                /*Does not work
+                 * DependencyService.Get<IPlaySound>().Play_Sound();*/
+                DependencyService.Get<IAudio>().PlayMp3File("ding.mp3");
             }
 
             HandleReceivedMessages();
@@ -68,7 +73,7 @@ namespace AnytimeABS
            {
                Device.BeginInvokeOnMainThread(() =>
                {
-                   ticker.Text = "Timer Stopped";
+                   ticker.Text = "Tighten Up!";
                });
            });
         }

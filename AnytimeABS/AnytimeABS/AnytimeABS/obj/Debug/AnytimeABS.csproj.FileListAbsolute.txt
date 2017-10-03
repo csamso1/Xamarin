@@ -8,7 +8,6 @@ C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\bin\D
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\bin\Debug\Xamarin.Forms.Platform.pdb
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.csprojResolveAssemblyReference.cache
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.MainPage.xaml.g.cs
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.App.xaml.g.cs
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.dll
@@ -17,3 +16,4 @@ C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\D
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.Instructions.xaml.g.cs
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.Timer.xaml.g.cs
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.csproj.CoreCompileInputs.cache
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS\obj\Debug\AnytimeABS.csprojResolveAssemblyReference.cache

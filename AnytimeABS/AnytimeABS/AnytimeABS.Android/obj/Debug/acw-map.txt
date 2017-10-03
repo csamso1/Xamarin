@@ -6,6 +6,10 @@ AnytimeABS.Droid.Services.StartTimerTaskService, AnytimeABS.Android;md54ffab8ab1
 AnytimeABS.Droid.Services.StartTimerTaskService, AnytimeABS.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54ffab8ab1d1cc7f10f6e90be9ecb9d58.StartTimerTaskService
 AnytimeABS.Droid.Services.StartTimerTaskService;md54ffab8ab1d1cc7f10f6e90be9ecb9d58.StartTimerTaskService
 anytimeabs.droid.services.StartTimerTaskService;md54ffab8ab1d1cc7f10f6e90be9ecb9d58.StartTimerTaskService
+AnytimeABS.Droid.Dependency.PlaySound_Droid, AnytimeABS.Android;md5610dc49fe3e6ee3e3254d5840c8d0ecd.PlaySound_Droid
+AnytimeABS.Droid.Dependency.PlaySound_Droid, AnytimeABS.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5610dc49fe3e6ee3e3254d5840c8d0ecd.PlaySound_Droid
+AnytimeABS.Droid.Dependency.PlaySound_Droid;md5610dc49fe3e6ee3e3254d5840c8d0ecd.PlaySound_Droid
+anytimeabs.droid.dependency.PlaySound_Droid;md5610dc49fe3e6ee3e3254d5840c8d0ecd.PlaySound_Droid
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor

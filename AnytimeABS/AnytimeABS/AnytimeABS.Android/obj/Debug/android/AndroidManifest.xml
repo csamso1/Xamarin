@@ -13,6 +13,12 @@
       </intent-filter>
     </activity>
     <service android:name="md54ffab8ab1d1cc7f10f6e90be9ecb9d58.StartTimerTaskService" />
+    <activity android:label="PlaySound" android:name="md5610dc49fe3e6ee3e3254d5840c8d0ecd.PlaySound_Droid">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="AnytimeABS.Android.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

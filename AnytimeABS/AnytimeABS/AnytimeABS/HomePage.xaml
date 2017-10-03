@@ -8,6 +8,7 @@
             <Button Text="Instructions" Clicked="Button_Clicked" />
             <Picker x:Name="TimePicker" Title="Select an amount of time" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" SelectedIndexChanged="TimePicker_SelectedIndexChanged" />
             <Button Text="Get Started!" Clicked="Button_Clicked_StartTimer" VerticalOptions="End"/>
+            <Button Text="TEST SOUND" Clicked="Test_Sound_Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

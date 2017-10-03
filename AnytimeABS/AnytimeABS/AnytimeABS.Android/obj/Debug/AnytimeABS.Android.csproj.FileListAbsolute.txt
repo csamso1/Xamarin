@@ -36,11 +36,13 @@ C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Andro
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\res\values\styles.xml
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\R.cs.flag
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\uploadflags.txt
-C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\bin\Debug\AnytimeABS.dll.mdb
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\bin\Debug\FormsViewGroup.dll.mdb
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\bin\Debug\Xamarin.Forms.Core.dll.mdb
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\AnytimeABS.Android.csproj.CoreCompileInputs.cache
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\res\raw\ding.mp3
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\bin\Debug\AnytimeABS.dll.mdb
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\bin\Debug\AnytimeABS.Android.dll.mdb
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\AnytimeABS.Android.dll.mdb
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\AnytimeABS.dll.mdb
@@ -48,4 +50,3 @@ C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Andro
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.Android\obj\Debug\AnytimeABS.Android.csproj.CoreCompileInputs.cache

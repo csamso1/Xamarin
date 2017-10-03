@@ -96,9 +96,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dependency\PlaySound_Droid.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AudioService.cs" />
     <Compile Include="Services\StartTimerTaskService.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +127,10 @@
       <Project>{46fa5e53-e02f-4e40-9833-06188481b2f1}</Project>
       <Name>AnytimeABS</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\ding.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

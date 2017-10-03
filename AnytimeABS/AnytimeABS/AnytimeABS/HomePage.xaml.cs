@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using AnytimeABS.Services;
 
 namespace AnytimeABS
 {
@@ -41,6 +42,11 @@ namespace AnytimeABS
         private void Button_Clicked_StartTimer(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Timer(TimePicker.SelectedIndex));
+        }
+
+        private void Test_Sound_Button_Clicked(object sender, EventArgs e)
+        {
+            DependencyService.Get<IAudio>().PlayMp3File("ding.mp3");
         }
     }
 }
