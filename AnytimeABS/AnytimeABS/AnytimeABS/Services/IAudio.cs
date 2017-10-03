@@ -8,6 +8,7 @@ namespace AnytimeABS.Services
 {
     public interface IAudio
     {
-        bool PlayMp3File(string fileName);
+        void PlayMp3File(string fileName);
+
     }
 }

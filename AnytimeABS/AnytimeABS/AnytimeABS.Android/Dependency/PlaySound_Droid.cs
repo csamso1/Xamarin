@@ -13,7 +13,7 @@ using Xamarin.Forms;
 using AnytimeABS.Dependency;
 using AnytimeABS.Droid.Dependency;
 using Android.Media;
-
+//This whole file needs to be removed
 namespace AnytimeABS.Droid.Dependency
 {
     [Activity(Label = "PlaySound", MainLauncher = true)]

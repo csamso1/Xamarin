@@ -4,6 +4,9 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using Xamarin.Forms;
+using AnytimeABS.iOS.Classes;
+using AnytimeABS.iOS.Services;
 
 namespace AnytimeABS.iOS
 {
@@ -14,6 +17,7 @@ namespace AnytimeABS.iOS
         {
             // if you want to use a different Application Delegate class from "AppDelegate"
             // you can specify it here.
+            //Problem with line below!!!
             UIApplication.Main(args, null, "AppDelegate");
         }
     }

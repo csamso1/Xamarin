@@ -4,6 +4,9 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using AudioToolbox;
+using AnytimeABS.iOS;
+using AnytimeABS.iOS.Classes;
 
 namespace AnytimeABS.iOS
 {
@@ -13,6 +16,10 @@ namespace AnytimeABS.iOS
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
+        #region Computed Properties
+        public override UIWindow Window { get; set; }
+        public AudioManager player { get; set; } 
+        #endregion
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
         // method you should instantiate the window, load the UI into it and then make the window
@@ -24,7 +31,7 @@ namespace AnytimeABS.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
+            AudioManager player = new AudioManager();
             return base.FinishedLaunching(app, options);
         }
     }
