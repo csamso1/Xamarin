@@ -15,6 +15,7 @@ namespace AnytimeABS
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Timer : ContentPage
 	{
+        bool Timer_Running = false;
 		public Timer (int index)
 		{
 			InitializeComponent ();
@@ -25,18 +26,28 @@ namespace AnytimeABS
             //Wiring up XAML buttons
             StartTimer.Clicked += (s, e) =>
             {
+                Timer_Running = true;
                 start_the_timer();
                 async void start_the_timer()
                 {
-                    while (true)
-                    {
+                    //while(true)
+                    //while(Timer_Running == true)
+                    //{
+                        /*if(Timer_Running == false)
+                        {
+                            break;
+                        }*/
                         var message = new StartTimerTaskMessage(time_intervals[index]);
                         MessagingCenter.Send(message, "StartTimerTaskMessage");
                         System.Diagnostics.Debug.WriteLine("Timer Started, Delay = " + num_milliseconds);
                         await Task.Delay(num_milliseconds);
                         System.Diagnostics.Debug.WriteLine("about to call stop_timer().");
                         stop_timer();
+                    if(Timer_Running == true)
+                    {
+                        start_the_timer();
                     }
+                    //}
                 }
             };
 
@@ -44,14 +55,17 @@ namespace AnytimeABS
             {
                 var message = new StopTimerTaskMessage();
                 MessagingCenter.Send(message, "StopTimerTaskMessage");
+                Timer_Running = false;
             };
 
             void stop_timer()
             {
+                
                 var message = new StopTimerTaskMessage();
                 MessagingCenter.Send(message, "StopTimerTaskMessage");
                 //Plays the tone
                 DependencyService.Get<IAudio>().PlayMp3File("ding.mp3");
+                //Timer_Running = false;
             }
 
             HandleReceivedMessages();
@@ -74,6 +88,14 @@ namespace AnytimeABS
                    ticker.Text = "Tighten Up!";
                });
            });
+
+            MessagingCenter.Subscribe<StopTimerTaskMessage>(this, "StopTimerTaskMessage", message =>
+            {
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    ticker.Text = "Timer Stopped";
+                });
+            });
         }
     }
 }

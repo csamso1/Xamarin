@@ -32,7 +32,7 @@ namespace AnytimeABS.iOS
                 await timerTask.Start();
             });
 
-            MessagingCenter.Subscribe<StopTimerTaskMessage>(this, "StopTimerTaskMessage", async message =>
+            MessagingCenter.Subscribe<StopTimerTaskMessage>(this, "StopTimerTaskMessage", message =>
             {
                 timerTask.Stop();
             });

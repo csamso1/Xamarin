@@ -59,6 +59,7 @@ namespace AnytimeABS.Droid.Services
             if(_cts != null)
             {
                 _cts.Token.ThrowIfCancellationRequested();
+
                 _cts.Cancel();
             }
             base.OnDestroy();
