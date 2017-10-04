@@ -7,6 +7,9 @@ using UIKit;
 using AudioToolbox;
 using AnytimeABS.iOS;
 using AnytimeABS.iOS.Classes;
+using AnytimeABS.iOS.Services;
+using AnytimeABS.Messages;
+using Xamarin.Forms;
 
 namespace AnytimeABS.iOS
 {
@@ -18,8 +21,24 @@ namespace AnytimeABS.iOS
     {
         #region Computed Properties
         public override UIWindow Window { get; set; }
-        public AudioManager player { get; set; } 
+        public AudioManager player { get; set; }
         #endregion
+
+        StartTimerTaskService timerTask;
+        void WireUpStartTimerTask()
+        {
+            MessagingCenter.Subscribe<StartTimerTaskMessage>(this, "StartTimerTaskMessage", async message => {
+                timerTask = new StartTimerTaskService();
+                await timerTask.Start();
+            });
+
+            MessagingCenter.Subscribe<StopTimerTaskMessage>(this, "StopTimerTaskMessage", async message =>
+            {
+                timerTask.Stop();
+            });
+        }
+
+
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
         // method you should instantiate the window, load the UI into it and then make the window
@@ -32,6 +51,7 @@ namespace AnytimeABS.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
             AudioManager player = new AudioManager();
+            WireUpStartTimerTask();
             return base.FinishedLaunching(app, options);
         }
     }

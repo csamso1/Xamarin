@@ -6,6 +6,7 @@ C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\b
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.dll
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\bin\iPhoneSimulator\Debug\AnytimeABS.pdb
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\bin\iPhoneSimulator\Debug\AnytimeABS.dll.mdb
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.pdb
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.xml
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll.mdb
@@ -67,8 +68,7 @@ C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\o
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\obj\iPhoneSimulator\Debug\optimized\Icon-Small@2x.png
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\obj\iPhoneSimulator\Debug\optimized\Icon-Small@3x.png
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\obj\iPhoneSimulator\Debug\optimized\
-C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\obj\iPhoneSimulator\Debug\AnytimeABS.iOS.csprojResolveAssemblyReference.cache
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\obj\iPhoneSimulator\Debug\AnytimeABS.iOS.csproj.CoreCompileInputs.cache
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\obj\iPhoneSimulator\Debug\AnytimeABS.iOS.exe
 C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\obj\iPhoneSimulator\Debug\AnytimeABS.iOS.pdb
-C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\bin\iPhoneSimulator\Debug\AnytimeABS.dll.mdb
+C:\Users\Clayton\Documents\GitHub\Xamarin\AnytimeABS\AnytimeABS\AnytimeABS.iOS\obj\iPhoneSimulator\Debug\AnytimeABS.iOS.csprojResolveAssemblyReference.cache

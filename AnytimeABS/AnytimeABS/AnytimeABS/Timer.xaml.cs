@@ -50,9 +50,7 @@ namespace AnytimeABS
             {
                 var message = new StopTimerTaskMessage();
                 MessagingCenter.Send(message, "StopTimerTaskMessage");
-                //ToDo play tone
-                /*Does not work
-                 * DependencyService.Get<IPlaySound>().Play_Sound();*/
+                //Plays the tone
                 DependencyService.Get<IAudio>().PlayMp3File("ding.mp3");
             }
 

@@ -36,14 +36,11 @@ namespace AnytimeABS
                    {
                        Message = i.ToString()
                    };
-
                    Device.BeginInvokeOnMainThread(() =>
                    {
                        MessagingCenter.Send<TickedMessage>(message, "TickedMessage");
                    });
-               }
-               System.Diagnostics.Debug.WriteLine("for loop in TaskTimer.cs has completed.");
-               System.Diagnostics.Debug.WriteLine("time_in_minutes = " + time_in_minutes);
+                };
            }, token);
         }
     }

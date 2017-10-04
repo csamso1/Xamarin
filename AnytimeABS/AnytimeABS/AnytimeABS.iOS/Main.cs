@@ -17,7 +17,6 @@ namespace AnytimeABS.iOS
         {
             // if you want to use a different Application Delegate class from "AppDelegate"
             // you can specify it here.
-            //Problem with line below!!!
             UIApplication.Main(args, null, "AppDelegate");
         }
     }
