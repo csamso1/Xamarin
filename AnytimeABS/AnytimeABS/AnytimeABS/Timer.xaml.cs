@@ -15,8 +15,14 @@ namespace AnytimeABS
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Timer : ContentPage
 	{
+        //Declaring class variables
         bool Timer_Running = false;
-		public Timer (int index)
+        int num_minutes;
+        int num_milliseconds;
+        int sec_remaning;
+        int min_remaning;
+        int min_elapsed;
+        public Timer (int index)
 		{
 			InitializeComponent ();
             //Avalible time intervals in minutes
@@ -25,8 +31,8 @@ namespace AnytimeABS
             {
                 index = 0;
             }
-            int num_minutes = time_intervals[index];
-            int num_milliseconds = num_minutes * 60 * 1000;
+            num_minutes = time_intervals[index];
+            num_milliseconds = num_minutes * 60 * 1000;
             //Wiring up XAML buttons
             StartTimer.Clicked += (s, e) =>
             {
@@ -75,7 +81,41 @@ namespace AnytimeABS
                {
                    ticker.TextColor = Color.White;
                    ticker.FontSize = 50;
-                   ticker.Text = message.Message;
+                   int sec_elapsed = Int32.Parse(message.Message);
+                   if(sec_elapsed == 0)
+                   {
+                       min_elapsed = 0;
+                   }
+                   else
+                   {
+                       min_elapsed = 60 % sec_elapsed;
+                   }
+                   System.Diagnostics.Debug.WriteLine("sec_elapsed = " + sec_elapsed);
+                   System.Diagnostics.Debug.WriteLine("min_elapsed = " + min_elapsed);
+                   min_remaning = (num_minutes * 60) - (sec_elapsed * 60) / 60;
+                   System.Diagnostics.Debug.WriteLine("min_remaning = " + min_remaning);
+                   if (min_elapsed == 0)
+                   {
+                       sec_remaning = 60 - sec_elapsed;
+                   }
+                   else
+                   {
+                       sec_remaning = num_minutes % min_elapsed;
+                   }
+                   if (sec_elapsed != 0)
+                   {
+                       //min_remaning = num_minutes / sec_remaning;
+                       if(min_remaning == 0)
+                       {
+                           sec_remaning = 60 - sec_elapsed;
+                       }
+                       else
+                       {
+                           sec_remaning = (num_minutes * 60) % sec_elapsed;
+                       }
+                   }
+                   String formatted_sec_remaning = String.Format("{0:00}", sec_remaning);
+                   ticker.Text = min_remaning + ":" + formatted_sec_remaning;
                });
            });
 
