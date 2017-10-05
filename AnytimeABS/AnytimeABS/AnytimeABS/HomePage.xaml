@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AnytimeABS.HomePage">
+             x:Class="AnytimeABS.HomePage"
+             BackgroundColor="Black"
+             Title="Anytime Abs">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-            <Label Text="Welcome to Anytime ABS!" VerticalOptions="Start"  HorizontalOptions="Center" FontSize="Large"/>
             <Button Text="Instructions" Clicked="Button_Clicked" />
             <Picker x:Name="TimePicker" Title="Select an amount of time" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" SelectedIndexChanged="TimePicker_SelectedIndexChanged" />
             <Button Text="Get Started!" Clicked="Button_Clicked_StartTimer" VerticalOptions="End"/>
-            <Button Text="TEST SOUND" Clicked="Test_Sound_Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

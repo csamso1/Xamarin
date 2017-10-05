@@ -1,15 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AnytimeABS.Instructions">
+             x:Class="AnytimeABS.Instructions"
+             Title="Anytime Abs"
+             BackgroundColor="Black">
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20" Padding="10">
-            <Label Text="1. Start by trying to pull your belly button to your spine." FontSize="Medium" />
-            <Label Text="2. Continue to tighten your abdominal muscles from your pelvis up to your rib cage." FontSize="Medium"/>
-            <Label Text="3. Hold them as tight as you can as long as you can." FontSize="Medium"/>
-            <Label Text="4. Within a minute or two, your mind will start to drift and you will relax your Abs." FontSize="Medium"/>
-            <Label Text="5. Set your timer to remind you to tighten up your abs and keep them tight." FontSize="Medium"/>
-            <Label Text="6. When you hear the chime, repeat steps 1 through 3." FontSize="Medium"/>
+            <Label Text="1. Start by trying to pull your belly button to your spine." FontSize="Medium" TextColor="White" />
+            <Label Text="2. Continue to tighten your abdominal muscles from your pelvis up to your rib cage." FontSize="Medium" TextColor="White"/>
+            <Label Text="3. Hold them as tight as you can as long as you can." FontSize="Medium" TextColor="White"/>
+            <Label Text="4. Within a minute or two, your mind will start to drift and you will relax your Abs." FontSize="Medium" TextColor="White"/>
+            <Label Text="5. Set your timer to remind you to tighten up your abs and keep them tight." FontSize="Medium" TextColor="White"/>
+            <Label Text="6. When you hear the chime, repeat steps 1 through 3." FontSize="Medium" TextColor="White"/>
             <Button Text="Back" VerticalOptions="End" HorizontalOptions="Center" Clicked="Button_Clicked_Back"/>
         </StackLayout>
     </ContentPage.Content>

@@ -17,6 +17,10 @@ namespace AnytimeABS
         public HomePage()
         {
             InitializeComponent();
+            TimePicker.BackgroundColor = Color.Black;
+            TimePicker.TextColor = Color.White;
+            TimePicker.Items.Add("Select an amount of time");
+            TimePicker.SelectedIndex = 0;
             TimePicker.Items.Add("1 minute");
             TimePicker.Items.Add("2 minutes");
             TimePicker.Items.Add("3 minutes");
@@ -36,17 +40,15 @@ namespace AnytimeABS
 
         public void TimePicker_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var TimePicker_Index = TimePicker.Items[TimePicker.SelectedIndex] + 1;
+            if(TimePicker.SelectedIndex == 0)
+            {
+                TimePicker.SelectedIndex = 1;
+            }
         }
 
         private void Button_Clicked_StartTimer(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Timer(TimePicker.SelectedIndex));
-        }
-
-        private void Test_Sound_Button_Clicked(object sender, EventArgs e)
-        {
-            DependencyService.Get<IAudio>().PlayMp3File("ding.mp3");
+            Navigation.PushAsync(new Timer(TimePicker.SelectedIndex - 1));
         }
     }
 }

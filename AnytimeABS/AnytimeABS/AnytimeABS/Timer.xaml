@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AnytimeABS.Timer">
+             x:Class="AnytimeABS.Timer"
+             Title="Anytime Abs"
+             BackgroundColor="Black">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
-            <Label Text="Remeber to keep your abs tight when you hear the tone!" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
-            <Button Text="Start Timer" HorizontalOptions="Center" x:Name="StartTimer"/>
-            <Button Text="Stop Timer" HorizontalOptions="Center" x:Name="StopTimer"/>
-            <Label Text="" x:Name="ticker" FontSize="Large" HorizontalOptions="Center"/>
+        <StackLayout HorizontalOptions="CenterAndExpand" Spacing="10">
+            <Label Text="" x:Name="ticker" HorizontalOptions="FillAndExpand" VerticalOptions="Start" VerticalTextAlignment="Start" HorizontalTextAlignment="Center"/>
+            <Label Text="Remeber to keep your Abs tight when you hear the tone!" FontSize="30" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White"/>
+            <Button Text="Start Timer" HorizontalOptions="Center" x:Name="StartTimer" VerticalOptions="Fill"/>
+            <Button Text="Stop Timer" HorizontalOptions="Center" x:Name="StopTimer" VerticalOptions="End"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

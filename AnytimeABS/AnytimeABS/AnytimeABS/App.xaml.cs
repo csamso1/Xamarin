@@ -12,6 +12,13 @@ namespace AnytimeABS
         public App()
         {
             InitializeComponent();
+            /*var MainPage = new NavigationPage
+            {
+                Title = "Anytime Abs"
+            };
+            MainPage.PushAsync(new NavigationPage(new HomePage()));
+            MainPage.BarBackgroundColor = Color.Black;*/
+
             MainPage = new NavigationPage(new HomePage());
         }
 

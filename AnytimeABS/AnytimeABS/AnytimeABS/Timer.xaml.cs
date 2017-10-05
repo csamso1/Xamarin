@@ -21,6 +21,10 @@ namespace AnytimeABS
 			InitializeComponent ();
             //Avalible time intervals in minutes
             int[] time_intervals = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            if(! (index >= 0))
+            {
+                index = 0;
+            }
             int num_minutes = time_intervals[index];
             int num_milliseconds = num_minutes * 60 * 1000;
             //Wiring up XAML buttons
@@ -30,24 +34,16 @@ namespace AnytimeABS
                 start_the_timer();
                 async void start_the_timer()
                 {
-                    //while(true)
-                    //while(Timer_Running == true)
-                    //{
-                        /*if(Timer_Running == false)
-                        {
-                            break;
-                        }*/
-                        var message = new StartTimerTaskMessage(time_intervals[index]);
-                        MessagingCenter.Send(message, "StartTimerTaskMessage");
-                        System.Diagnostics.Debug.WriteLine("Timer Started, Delay = " + num_milliseconds);
-                        await Task.Delay(num_milliseconds);
-                        System.Diagnostics.Debug.WriteLine("about to call stop_timer().");
-                        stop_timer();
+                    var message = new StartTimerTaskMessage(time_intervals[index]);
+                    MessagingCenter.Send(message, "StartTimerTaskMessage");
+                    System.Diagnostics.Debug.WriteLine("Timer Started, Delay = " + num_milliseconds);
+                    await Task.Delay(num_milliseconds);
+                    System.Diagnostics.Debug.WriteLine("about to call stop_timer().");
+                    stop_timer();
                     if(Timer_Running == true)
                     {
                         start_the_timer();
                     }
-                    //}
                 }
             };
 
@@ -77,6 +73,8 @@ namespace AnytimeABS
            {
                Device.BeginInvokeOnMainThread(() =>
                {
+                   ticker.TextColor = Color.White;
+                   ticker.FontSize = 50;
                    ticker.Text = message.Message;
                });
            });
@@ -85,6 +83,8 @@ namespace AnytimeABS
            {
                Device.BeginInvokeOnMainThread(() =>
                {
+                   ticker.TextColor = Color.White;
+                   ticker.FontSize = 50;
                    ticker.Text = "Tighten Up!";
                });
            });
