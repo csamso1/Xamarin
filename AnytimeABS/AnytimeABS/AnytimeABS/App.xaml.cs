@@ -19,7 +19,8 @@ namespace AnytimeABS
             MainPage.PushAsync(new NavigationPage(new HomePage()));
             MainPage.BarBackgroundColor = Color.Black;*/
 
-            MainPage = new NavigationPage(new HomePage());
+            MainPage = new NavigationPage(new HomePage()) {
+                BarTextColor = Color.Red };
         }
 
         protected override void OnStart()
