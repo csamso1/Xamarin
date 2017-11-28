@@ -15,7 +15,7 @@ public class PlaySound_Droid
 	}
 
 
-	public PlaySound_Droid () throws java.lang.Throwable
+	public PlaySound_Droid ()
 	{
 		super ();
 		if (getClass () == PlaySound_Droid.class)

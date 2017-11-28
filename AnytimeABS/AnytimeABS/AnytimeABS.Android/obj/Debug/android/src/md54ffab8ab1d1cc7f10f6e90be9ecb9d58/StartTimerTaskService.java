@@ -18,7 +18,7 @@ public class StartTimerTaskService
 	}
 
 
-	public StartTimerTaskService () throws java.lang.Throwable
+	public StartTimerTaskService ()
 	{
 		super ();
 		if (getClass () == StartTimerTaskService.class)
