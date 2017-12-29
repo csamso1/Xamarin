@@ -19,9 +19,9 @@ namespace AnytimeABS
         bool Timer_Running = false;
         int num_minutes;
         int num_milliseconds;
-        int sec_remaning;
+        /**int sec_remaning;
         int min_remaning;
-        int min_elapsed;
+        int min_elapsed;**/
         public Timer (int index)
 		{
 			InitializeComponent ();
@@ -82,40 +82,20 @@ namespace AnytimeABS
                    ticker.TextColor = Color.White;
                    ticker.FontSize = 50;
                    int sec_elapsed = Int32.Parse(message.Message);
-                   if(sec_elapsed == 0)
-                   {
-                       min_elapsed = 0;
-                   }
-                   else
-                   {
-                       min_elapsed = 60 % sec_elapsed;
-                   }
-                   System.Diagnostics.Debug.WriteLine("sec_elapsed = " + sec_elapsed);
-                   System.Diagnostics.Debug.WriteLine("min_elapsed = " + min_elapsed);
-                   min_remaning = (num_minutes * 60) - (sec_elapsed * 60) / 60;
-                   System.Diagnostics.Debug.WriteLine("min_remaning = " + min_remaning);
-                   if (min_elapsed == 0)
-                   {
-                       sec_remaning = 60 - sec_elapsed;
-                   }
-                   else
-                   {
-                       sec_remaning = num_minutes % min_elapsed;
-                   }
-                   if (sec_elapsed != 0)
-                   {
-                       //min_remaning = num_minutes / sec_remaning;
-                       if(min_remaning == 0)
-                       {
-                           sec_remaning = 60 - sec_elapsed;
-                       }
-                       else
-                       {
-                           sec_remaning = (num_minutes * 60) % sec_elapsed;
-                       }
-                   }
-                   String formatted_sec_remaning = String.Format("{0:00}", sec_remaning);
-                   ticker.Text = min_remaning + ":" + formatted_sec_remaning;
+                   // total number of seconds to run the timer for
+                   int num_sec_to_run = num_minutes * 60;
+                   System.Diagnostics.Debug.WriteLine("num_sec_to_run = " + num_sec_to_run);
+                   //number of seconds remaining in the timer
+                   int num_sec_remaning = num_sec_to_run - sec_elapsed;
+                   System.Diagnostics.Debug.WriteLine("num_sec_remaning = " + num_sec_remaning);
+                   //number of minutes remaining in the timer
+                   int num_min_remaning = num_sec_remaning / 60;
+                   System.Diagnostics.Debug.WriteLine("num_min_remaning = " + num_min_remaning);
+                   //number of seconds reamining in the timer, knowing how many minutes are remaining
+                   int num_sec_remaining_remainder = num_sec_remaning - (num_min_remaning * 60);
+                   System.Diagnostics.Debug.WriteLine("num_sec_remaning_remainder = " + num_sec_remaining_remainder);
+                   String formatted_sec_remaning = String.Format("{0:00}", num_sec_remaining_remainder);
+                   ticker.Text = num_min_remaning + ":" + formatted_sec_remaning;
                });
            });
 
